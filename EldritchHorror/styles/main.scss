@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/eldritchHorrorHome.jpg) center/cover no-repeat;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    backdrop-filter: blur(3px);
+}
+
+._active {
+    border: 2px solid #fff;
+    box-shadow:
+        0 0 3px #fff,
+        0 0 8px #0fa,
+        0 0 11px #0fa,
+        0 0 17px #0fa,
+        0 0 25px #0fa,
+}
+
+._invis {
+    visibility: 0;
+    opacity: 0;
+}
+
+.ancient {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    // .ancient__ite
+    &__item {
+        width: 200px;
+        height: 260px;
+        cursor: pointer;
+        margin-bottom: 40px;
+        border-radius: 10px;
+
+        // .ancient__item_azathoth
+        &_azathoth {
+            background: url(../assets/Ancients/Azathoth.png) center/cover no-repeat;
+        }
+
+        // .ancient__item_cthulthu
+        &_cthulthu {
+            background: url(../assets/Ancients/Cthulthu.png) center/cover no-repeat;
+        }
+
+        // .ancient__item_iog-sothothh
+        &_iog-sothothh {
+            background: url(../assets/Ancients/IogSothoth.png) center/cover no-repeat;
+        }
+
+        // .ancient__item_shub-niggurath
+        &_shub-niggurath {
+            background: url(../assets/Ancients/ShubNiggurath.png) center/cover no-repeat;
+        }
+
+        &:hover {
+            border: 2px solid #fff;
+            box-shadow:
+            0 0 3px #fff,
+            0 0 8px #0fa,
+            0 0 11px #0fa,
+            0 0 17px #0fa,
+            0 0 25px #0fa,
+        }
+    }
+}
+
+.difficulty {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    // .difficulty__item
+    &__item {
+        padding: 6px 12px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+
+        &:hover {
+            border: 1px solid #fff;
+            box-shadow:
+            0 0 3px #fff,
+            0 0 8px #0fa,
+            0 0 11px #0fa,
+            0 0 17px #0fa,
+            0 0 25px #0fa,
+        }
+    }
+}
+
+.go {
+    text-align: center;
+
+    // .go__button
+    &__button {
+        padding: 6px 12px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+
+        &:hover {
+            border: 1px solid #fff;
+            box-shadow:
+                0 0 5px #fff,
+                0 0 11px rgb(0, 119, 255),
+                0 0 20px rgb(0, 119, 255),
+                0 0 30px rgb(0, 119, 255),
+                0 0 55px rgb(0, 119, 255),
+        }
+    }
+}
+
+.pack {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(4px);
+
+    // .pack__subtitle
+    &__subtitle {
+        margin-bottom: 15px;
+    }
+
+    // .pack__row
+    &__row {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+
+    // .pack__item
+    &__item {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: solid 1px #fff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // .pack__item_green
+        &_green {
+            background-color: rgb(11, 146, 29);
+        }
+
+        // .pack__item_brown
+        &_brown {
+            background-color: rgb(104, 86, 62);
+        }
+
+        // .pack__item_blue
+        &_blue {
+            background-color: rgb(27, 104, 167);
+        }
+    }
+}
+
+.cards {
+    padding: 20px;
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+
+    // .cards__item
+    &__item {
+        height: 279px;
+        width: 190px;
+        border-radius: 10px;
+
+
+        // .cards__item_turnOff
+        &_turnOff {
+            background: url(../assets/mythicCardBackground.png) center/contain no-repeat;
+            margin-right: 15px;
+            cursor: pointer;
+            border: 1px solid #fff;
+        }
+
+        // .cards__item_turnOn
+        &_turnOn {
+            border: 1px solid #fff;
+        }
+    }
+}
+
+.wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
